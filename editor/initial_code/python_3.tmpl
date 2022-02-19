@@ -2,19 +2,19 @@
 {% block env %}{% endblock env %}
 
 {% block start %}
-def sum_two(a: int, b: int) -> int:
+def string_length(text: str) -> int:
     # your code here
-    return None
+    return 0
 {% endblock start %}
 
 {% block example %}
 print('Example:')
-print(mult_two(1, 2))
+print(string_length("Hi"))
 {% endblock %}
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}mult_two({{t.input|p_args}})
+assert {% block call %}string_length({{t.input|p_args}})
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 

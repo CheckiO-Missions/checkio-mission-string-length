@@ -1,40 +1,35 @@
-<body data-author="YOUR_CHECKIO_USERNAME">
+<body data-author="oduvan">
 <div class="question-answer">
     <div class="question">
         I have no idea how to start solving this mission
     </div>
     <div class="answer">
-        <p>String in Python is an array of chars, or array of symbols. So the string "Hi" is an array of two elements "H" and "i". So almost all array functions work correctly with string.</p>
-
-        <p>So you goal is to convert number (int) into a sting, and then, find the length of that string (or find the length of arrat or chars)</p>
+        <p>First thing first - <a href="https://www.google.com/search?q=python+string+length" target="_blank">google "python string length"</a></p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Which function I'm looking for?
+        I can't understand
     </div>
     <div class="answer">
-        <p>Here is a list of all built-in functions in Python. <a target="_blank" href="https://docs.python.org/3/library/functions.html">https://docs.python.org/3/library/functions.html</a>. Try to check the list.</p>
+        <p><a target="_blank" href="https://docs.python.org/3/library/functions.html#len">https://docs.python.org/3/library/functions.html</a>. <b>len</b> is the function you are looking for.</p>
+        <p>So if you open your python console and say "len('hi')" you should get 2, because the word "hi" has two letters</p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Can you please point me out?
+        Ok. How can I use it in solution then?
     </div>
     <div class="answer">
-        <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">len</a> is the function to find the length, and <a target="_blank" href="https://docs.python.org/3/library/functions.html#str">str</a> to conver any object to string.
-    </div>
-</div>
-<div class="question-answer">
-    <div class="question">
-        Ok. How can I use it then?
-    </div>
-    <div class="answer">
+        <p>Your start code should look like this</p>
         <pre class="brush: python">
-number = 56
-text = str(number)
-text_length = len(text)
-# the variable text_length now contains length of the string text
+def string_length(text: str) -> int:
+    # your code here
+    return 0
+        </pre>
+        <p>which means inside of the variable "text" you have the first variable, which is the string, the length of which you need to calculate. So just do the following..</p>
+        <pre class="brush: python">
+len(text)
         </pre>
     </div>
 </div>
@@ -44,17 +39,10 @@ text_length = len(text)
     </div>
     <div class="answer">
         <pre class="brush: python">
-def number_length(number: int) -> int:
-    text = str(number)
+def string_length(text: str) -> int:
+    # your code here
     return len(text)
-        </pre>
-
-        <p>Or you can do it in one line</p>
-
-        <pre class="brush: python">
-def number_length(number: int) -> int:
-    return len(str(number))
-        </pre>
+        </pre
     </div>
 </div>
 
